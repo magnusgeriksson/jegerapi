@@ -32,7 +32,7 @@ export const vaapen = [
 ]
 
 export const jegerinfo = {
-    navn: "Jeger Jegersen",
+    navn: "Jeger Storjeger",
     fodselsaar: 1985,
     jegernr: "00399561",
     jaktaar: "2019/2020",
@@ -41,7 +41,6 @@ export const jegerinfo = {
     "lisens-arter": "Jerv, Gaupe, Bjørn, Ulv",
     "vaapenkort-url": "",
     proveskudd: proveskudd,
-        
     skyteprove: skyteprover,
     vaapen: vaapen
 }

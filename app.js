@@ -10,12 +10,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // get all todos
 app.get('/api/getjegerinfo/', (req, res) => {
+    console.log('traff getjegerinfo')
   res.status(200).send({
     jegerinfo: jegerinfo
   })
 });
 
 app.post('/api/addskyteprove/', (req, res) => {
+    console.log('traff addskyteprove')
     if(!req.body.dato) {
         return res.status(400).send({
             success: 'false',
@@ -49,6 +51,7 @@ app.post('/api/addskyteprove/', (req, res) => {
 });
 
 app.post('/api/addproveskudd', (req, res) => {
+    console.log('traff addskyteprove')
     if(!req.body.dato) {
         return res.status(400).send({
             success: 'false',
@@ -73,7 +76,7 @@ app.post('/api/addproveskudd', (req, res) => {
     })
 })
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
